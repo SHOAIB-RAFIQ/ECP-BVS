@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="form.css">
+  <link rel="stylesheet" type="text/css" href="form1.css">
+  <title>Sign Up Form</title>
+</head>
+<body>
+
+<div class="head">
+  <h1 class="txt">Election Commision of Pakistan</h1>
+  <img src="logo.png" class="logo">
+  <h1 class="txt1">پاکستان الیکشن کمیشن </h1>
+</div>
+<div class="menu">
+  <div class="menu0">
+    <a href="home.html" class="btns">Home</a>
+    </div>
+<div class="menu1">
+<button class="btns">About ECP</button>
+  <div class="menu1-content">
+    <ul >
+    <a href="About ECP.html" class="drop">OverView of ECP</a>
+    <a href="About ECP.html" class="drop">Honourable CES</a>
+    <a href="About ECP.html" class="drop">Honourable Members</a>
+    <a href="About ECP.html" class="drop">Officers</a>
+  </ul>
+  </div>
+</div>
+
+<div class="menu2">
+  <button class="btns">For Voters</button> 
+     <div class="menu2-content">
+      <ul >
+      <a href="For Voter.html" class="drop">How to register</a>
+      <a href="For Voter.html" class="drop">Check your Registeration</a>
+      <a href="For Voter.html" class="drop">FAQs</a>
+      </ul>
+     </div>
+</div>
+
+
+<div class="menu3">
+  <button class="btns">Elections</button> 
+     <div class="menu3-content">
+      <ul>
+      <a href="Elections.html" class="drop">General Elections</a>
+      <a href="Elections.html" class="drop">LG elections</a>
+      <a href="Elections.html" class="drop">Election Laws</a>
+      <a href="Elections.html" class="drop">Delimition</a>
+      <a href="Elections.html" class="drop">Election Rolls</a>
+      <a href="Elections.html" class="drop">Party Position</a>
+      
+      </ul>
+     </div>
+</div>
+
+
+<div class="menu4">
+  <button class="btns">Media ECP</button> 
+     <div class="menu4-content">
+      <ul>
+      <a href="Media ECP.html" class="drop">Press Releases</a>
+      <a href="Media ECP.html" class="drop">NewsLetter/Publications</a>
+      <a href="Media ECP.html" class="drop">Notification</a>
+      <a href="Media ECP.html" class="drop">Image Gallery</a>
+      <a href="Media ECP.html" class="drop">Vedio Gallery</a>
+      <a href="Media ECP.html" class="drop">Training Meterial</a>
+      
+      </ul>
+     </div>
+</div>
+
+
+<div class="menu5">
+  <button class="btns">Parties and Candidates</button> 
+     <div class="menu5-content">
+      <ul>
+      <a href="Parties & Candidates.html" class="drop">List Of Political Parties</a>
+      <a href="Parties & Candidates.html" class="drop">List of all symbols</a>
+      <a href="Parties & Candidates.html" class="drop">Avalaible Symbols</a>
+      
+      </ul>
+     </div>
+</div>
+
+<div class="menu6">
+    <a href="Download.html" class="btns">Download</a>
+</div>
+
+
+<div class="menu7">
+  <button class="btns">Misc.</button> 
+     <div class="menu7-content">
+      <ul>
+      <a href="Misc.html" class="drop">Tenders</a>
+      <a href="Misc.html" class="drop">Contact US</a>
+      <a href="Misc.html" class="drop">ECP sacritrate officer contract</a>
+      
+      </ul>
+     </div>
+</div>
+
+  <div class="menu8">
+    <a href="Jobs.html" class="btns">Jobs</a>
+  </div>
+</div>
+
+<div class="line"></div>
+<div class="container">
+  <form>
+      <div class="row">
+      <br>
+      <h2 style="text-align:center">Sign Up </h2>
+
+      <div class="col">
+        <div class="hide-md-lg">
+        </div>
+        
+        <input type="text" name="Full Name" placeholder="Full Name" required>
+        <input type="text" maxlength="15" name="CNIC" placeholder="CNIC  (XXXXX-XXXXXXX-X)" required>
+        <input type="number" name="age" placeholder="Age" required>
+        <input list="Gender" placeholder="Select Gender">
+        <datalist id="Gender"> 
+          <option value="Male" /> 
+          <option value="Fe Male" /> 
+          <option value="Other" />  
+        </datalist>
+        <input list="Qualifications" placeholder="Select Qualifications">
+        <datalist id="Qualifications"> 
+          <option value="Bachelors" /> 
+          <option value="Masters" /> 
+          <option value="M-Phil" />  
+          <option value="PHD" /> 
+        </datalist>
+        <input type="tel" maxlength="11" name="Phone No" placeholder="Contact No  (03XX-XXXXXXX)" pattern="03[0-9]{2}-(?!1234567)(?!1111111)(?!7654321)[0-9]{7}" required>
+        <input type="text" name="Addres" placeholder="Address" required>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <input input type="password" name="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password  (Minimum 8 Characters)" required>
+        <input type="password" name="password" placeholder=" Confirm Password" required>
+
+        <input list="admin" placeholder="Sign Up as">  
+        <datalist id="admin"> 
+            <option value="Admin" /> 
+            <option value="Voter" /> 
+            <option value="Candidate" />  
+        </datalist>
+            <input type="text" name="Partyname" placeholder="Party Name  (Only for Candidate)" >
+            <input type="text" name="ElectoralSymbol" placeholder="Electoral Symbol  (Only for Candidate)" >
+            <input type="text" name="Circle" maxlength="6" placeholder="Circle (NA-XXX)" required>
+            <div class="profile-pic-div">
+                <img src="image.jpg" id="photo">
+                <input type="file" id="file">
+                <label for="file" id="uploadBtn">Choose Photo</label>
+              </div>
+              
+              <script src="Picture.js"></script>
+              <a href="form.html" class="back1">Sign Up</a>
+             <!--!<input type="submit" value="Sign Up">!-->
+
+              <div class="fingerprint">
+                  <img class="image1" src="download.png" alt="finger_print">
+              </div>
+
+      </div>
+
+      </div>
+
+    </div>
+  </form>
+</div>
+
+<br>
+<center><a href="./home.html" class="back">Go Back</a></center>
+<br>
+<div class="line3"></div>
+  <div class="foot">
+    <img src="logo.png" class="logo1">
+    <ul style="float: right;">
+      <li class="foot1">
+        <h3 style="color: white">MEDIA ECP</h3>
+<p style="color: white">
+Press Releases<br>
+Newsletters/Publications<br>
+Notifications<br>
+Image Gallery<br>
+Video Gallery<br>
+Training Material<br>
+</p>
+      </li>
+      <li class="foot1">
+        <h3 style="color: white">Elections</h3>
+<p style="color: white">
+General Elections<br>
+LG Elections<br>
+Election Laws<br>
+Delimitation<br>
+Electoral Rolls<br>
+Party Position<br>
+</p>
+      </li>
+      <li class="foot1">
+        <h3 style="color: white">For Voters</h3>
+<p style="color: white">
+How to Register<br>
+Check Your Registration<br>
+FAQs
+</p>
+      </li>
+      <li class="foot1">
+        <h3 style="color: white">ABOUT ECP</h3>
+<p style="color: white">
+Overview of ECP<br>
+Honourable CEC<br>
+Honourable Members<br>
+Officers<br>
+</p>
+      </li>
+    </ul>
+  </div>
+  <div class="foot2">
+    <center><p class="foot3">Copyright © ECP 2020-21 | All Rights are Reserved</p></center>
+  </div>
+
+</body>
+</html>

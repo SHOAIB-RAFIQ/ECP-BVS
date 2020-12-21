@@ -1,0 +1,182 @@
+* {box-sizing: border-box}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+}
+
+/* style inputs and link buttons */
+.btn {
+  width: 100%;
+  margin-left: 80px;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: underline; 
+  color: #45a049;
+}
+
+input,
+.btn1 {
+  width: 50%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  margin-left: 350px;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 100%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.inner {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.back{
+  border-radius: 10px;
+  border: 2px solid white;
+  padding-top: 7px;
+  background-color:#42764d;
+  color:white;
+  font-family: Arial;
+  width: 110px;
+  height: 40px;
+  display: inline-block;
+  text-decoration: none;
+
+
+}
+.back:hover{
+  background-color:  #4f8d52; 
+}
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+
+.infor{
+    margin-top: 50px;
+  }
+  
+  .infor h1{
+    font-family: 'Allura', cursive;
+    font-size: 52px;
+    margin-bottom: 60px;
+    color: #42764d;
+    text-align: center;
+  }
+  
+  .information{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .information .Info{
+    background: #fff;
+    margin: 5px;
+    text-align: justify;
+    color: #4f8d52;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    position: relative;
+  }
+  
+  .information .Info h3{
+    color: #42764d;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 50px;
+  }
+  
+  /*.information .Info p.role{
+    color: #ccc;
+    margin: 12px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+  }*/
+  
+  
+  

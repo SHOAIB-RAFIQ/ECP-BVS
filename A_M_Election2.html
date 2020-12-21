@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Admin_Manage_Election Panel</title>
+  <link rel="stylesheet" href="Admin.css">
+  <link rel="stylesheet" href="Admin 2.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>Admin View</h2>
+        <ul>
+            <li><a href="A_Profile.html"><i class="fas fa-id-badge"></i>Profile</a></li>
+            <li><a href="A_Voter.html"><i class="fas fa-users"></i>Voters</a></li>
+            <li><a href="A_Candidate.html"><i class="fas fa-user"></i>Candidates</a></li>
+            <li><a href="A_Party.html"><i class="fas fa-republican"></i>Parties</a></li>
+            <li><a href="A_Election.html"><i class="fas fa-vote-yea"></i>Elections</a></li>
+            <li><a href="A_Result.html"><i class="fas fa-poll"></i>Results</a></li>
+            <li><a href="A_Complaint.html"><i class="fas fa-comment-alt"></i>Complaints</a></li>
+            <li><a href="home.html"><i class="fas fa-sign-out-alt"></i>Log Out</a></li>
+        </ul> 
+        <div class="social_media">
+          <a href="Misc.html"><i class="fab fa-facebook-f"></i></a>
+          <a href="Misc.html"><i class="fab fa-twitter"></i></a>
+          <a href="Misc.html"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="main_content">
+        <center><div class="header">Welcome!! You Have Successfully Logged In.</div>  </center>
+        <div class="info">
+          <div><h1 class="AV">Admin View (Delete Election)</h1></div>
+<div class="container">
+  <form>
+      <div class="row">
+      <div class="col">
+        <div class="hide-md-lg">
+        </div>
+
+        <input type="text" name="Election ID" placeholder="Election ID" required>
+        <input type="text" name="Election Name" placeholder="Election Name" required>
+        <input list="Election Type" placeholder="Election Type">
+        <datalist id="Election Type"> 
+          <option value="General Elections" /> 
+          <option value="Senate Elections" /> 
+          <option value="LG Elections" />  
+        </datalist>
+        <input type="date" name="voting date" placeholder="voting date" required>
+        <input type="time" name="Starting time" placeholder="Starting time" required>
+        <input type="time" name="Ending time" placeholder="Ending date" required>
+        <a href="form.html" class="back1">Delete Election</a>
+
+      </div>
+
+      </div>
+
+    </div>
+  </form>
+</div>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>
